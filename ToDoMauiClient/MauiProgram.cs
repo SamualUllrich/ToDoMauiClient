@@ -18,6 +18,8 @@ namespace ToDoMauiClient
 
             builder.Services.AddSingleton<IRestDataService, RestDataService>();
 
+            builder.Services.AddSingleton<MainPage>();
+
             return builder.Build();
         }
     }
