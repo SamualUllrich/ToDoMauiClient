@@ -9,7 +9,14 @@
 
     <CollectionView x:Name = "collectionView"
                     SelectionMode ="Single"
-                    SelectionChanged="OnSelectionChanged">
+                    SelectionChanged="OnSelectionChanged"
+                    Margin = "30">
+                    <!--Margin = Left, Top, Right, Bottom-->
+
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+        </CollectionView.ItemsLayout>
+        
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <Label Text="{Binding ToDoName}" FontSize="Medium"/>
