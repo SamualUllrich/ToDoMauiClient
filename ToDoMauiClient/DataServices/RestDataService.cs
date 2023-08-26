@@ -70,7 +70,7 @@ namespace ToDoMauiClient.DataServices
 
             try 
             {
-                HttpResponseMessage response = await _httpClient.DeleteAsync($"{_url}/todo{id}");
+                HttpResponseMessage response = await _httpClient.DeleteAsync($"{_url}/todo/{id}");
 
                 if (response.IsSuccessStatusCode)
                 {

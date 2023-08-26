@@ -40,7 +40,7 @@ public partial class ManageToDoPage : ContentPage
 			return false;
 	}
 
-	async void OnSaveButtonClicked(ObjectSecurity sender, EventArgs e)
+	async void OnSaveButtonClicked(object sender, EventArgs e)
 	{
 		if (_isNew) 
 		{
